@@ -13,26 +13,31 @@
         <style>
             .container {
                 max-width: 70%;
+                min-height: max-content;
             }
             .paragraf {
-                max-width: 80ch;
+                text-align: justify;
+            }
+            .paragraf>p {
+                margin-bottom: 0;
+                padding-bottom: 1rem;
             }
         </style>
     </head>
     <body>
-        <div class="container border-end">
-            <div class="headline border-bottom mt-4 me-5">
+        <div class="container border-end border-end-primary">
+            <div class="headline pt-3">
                 <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptatum?</h1>
                 <div class="row">
-                    <div class="col-8 lead my-3" title="Sandy Aditya">By: Lorem ipsum</div>
-                    <div class="col-4 lead my-3">Cianjur, 29 April 2025</div>
-                </div>
+                    <div class="col-8 lead my-3" title="Lorem ipsum">By: Lorem ipsum</div>
+                    <div class="col-4 lead my-3">Saturn, 29 April 2025</div>
+                </div
             </div>
             <div class="img m-3">
-                <img src="IMG/computer.jpeg" class="img-fluid rounded" alt="Image" width="650" />
+                <img src="IMG/computer.jpeg" class="img rounded" alt="Image" width="600" height="400" />
                 <p class="fs-6 ms-4 mt-2 lead">Lorem ipsum dolor sit amet consectetur. (<a href="https://dreamina.capcut.com/en-en/">Photo: Dreamina.AI</a>)</p>
             </div>
-            <div class="paragraf mt-3 me-5 mb-4 fs-5">
+            <div class="paragraf me-5 fs-5">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias qui, modi atque repellendus animi nesciunt sit iusto vel tempore! Quibusdam sint nobis
                     est recusandae vel porro atque rem voluptates? Voluptatem ullam cumque unde obcaecati. Dolor cupiditate non libero velit nesciunt, dolores ab quo. Unde
@@ -43,30 +48,6 @@
                     reiciendis eligendi molestiae ea similique numquam dolor voluptates molestias esse incidunt laborum dignissimos, magni eaque! Natus vero qui dignissimos
                     delectus obcaecati. Modi necessitatibus quibusdam error.
                 </p>
-            </div>
-
-            <div class="btn-group my-4 d-flex justify-content-center" role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-primary">Left</button>
-                <button type="button" class="btn btn-outline-primary active">Middle (Active)</button>
-                <button type="button" class="btn btn-outline-primary">Right</button>
-            </div>
-
-            <div
-                class="btn-toolbar mt-5 mb-4 justify-content-center"
-                role="toolbar"
-                aria-label="Toolbar with
-                button groups"
-            >
-                <div class="btn-group me-2" role="group" aria-label="First group">
-                    <button type="button" class="btn btn-outline-primary">1</button>
-                    <button type="button" class="btn btn-primary">2</button>
-                    <button type="button" class="btn btn-outline-primary">3</button>
-                    <button type="button" class="btn btn-primary">4</button>
-                    <button type="button" class="btn btn-outline-primary">5</button>
-                    <button type="button" class="btn btn-primary">6</button>
-                    <button type="button" class="btn btn-outline-primary">7</button>
-                    <button type="button" class="btn btn-primary">8</button>
-                </div>
             </div>
         </div>
         <script
