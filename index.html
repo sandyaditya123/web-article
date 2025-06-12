@@ -11,33 +11,39 @@
             crossorigin="anonymous"
         />
         <style>
-            .container {
-                max-width: 70%;
-                min-height: max-content;
-            }
             .paragraf {
                 text-align: justify;
             }
-            .paragraf>p {
-                margin-bottom: 0;
+            .paragraf > p {
+                margin-bottom: 1rem;
                 padding-bottom: 1rem;
+            }
+            @media screen and (min-width: 768px) {
+                .headline {
+                    border: none !important;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                div.container-md {
+                    border-right: none !important;
+                }
             }
         </style>
     </head>
     <body>
-        <div class="container border-end border-end-primary">
-            <div class="headline pt-3">
-                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptatum?</h1>
-                <div class="row">
-                    <div class="col-8 lead my-3" title="Lorem ipsum">By: Lorem ipsum</div>
-                    <div class="col-4 lead my-3">Saturn, 29 April 2025</div>
-                </div
+        <div class="container-md border-end">
+            <div class="headline pt-3 border-bottom text-center text-md-start">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, provident esse. Doloremque ab unde</h1>
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 lead my-1 my-md-3 my-sm-2" title="Lorem ipsum">By: Lorem ipsum</div>
+                    <div class="col-sm-4 lead my-1 my-md-3 my-sm-2">Saturn, 29 April 2025</div>
+                </div>
             </div>
             <div class="img m-3">
-                <img src="IMG/computer.jpeg" class="img rounded" alt="Image" width="600" height="400" />
+                <img src="IMG/computer.jpeg" class="img-fluid rounded" alt="Image" width="600" height="400" />
                 <p class="fs-6 ms-4 mt-2 lead">Lorem ipsum dolor sit amet consectetur. (<a href="https://dreamina.capcut.com/en-en/">Photo: Dreamina.AI</a>)</p>
             </div>
-            <div class="paragraf me-5 fs-5">
+            <div class="paragraf me-md-5 px-sm-2 fs-5">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias qui, modi atque repellendus animi nesciunt sit iusto vel tempore! Quibusdam sint nobis
                     est recusandae vel porro atque rem voluptates? Voluptatem ullam cumque unde obcaecati. Dolor cupiditate non libero velit nesciunt, dolores ab quo. Unde
