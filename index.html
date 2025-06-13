@@ -13,34 +13,61 @@
         <style>
             .paragraf {
                 text-align: justify;
+                margin-bottom: 0;
+                padding-bottom: 0;
             }
             .paragraf > p {
-                margin-bottom: 1rem;
-                padding-bottom: 1rem;
+                padding-block: 1.25rem;
+                margin-block: 0;
+            }
+            @media screen and (max-width: 576px) {
+                div.lead {
+                    font-size: 1rem;
+                }
+                .paragraf > p {
+                    font-size: 1rem !important;
+                }
             }
             @media screen and (min-width: 768px) {
                 .headline {
-                    border: none !important;
+                    border-bottom: none !important;
                 }
             }
             @media screen and (max-width: 768px) {
+                body {
+                    margin-left: 0 !important;
+                }
                 div.container-md {
                     border-right: none !important;
+                }
+                h1 {
+                    font-size: calc(1.2rem + 1.5vw);
+                }
+            }
+            @media screen and (min-width: 992px) {
+                body {
+                    width: 65%;
+                    margin-left: 9rem;
+                }
+            }
+            @media screen and (max-width: 992px) {
+                body {
+                    margin-left: -2rem;
                 }
             }
         </style>
     </head>
     <body>
-        <div class="container-md border-end">
-            <div class="headline pt-3 border-bottom text-center text-md-start">
+        <div class="container-md border-2 border-end">
+            <div class="headline pt-4 border-2 border-bottom text-center text-md-start">
                 <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, provident esse. Doloremque ab unde</h1>
                 <div class="row justify-content-between">
-                    <div class="col-sm-4 lead my-1 my-md-3 my-sm-2" title="Lorem ipsum">By: Lorem ipsum</div>
-                    <div class="col-sm-4 lead my-1 my-md-3 my-sm-2">Saturn, 29 April 2025</div>
+                    <div class="col-sm-4 lead my-sm-2 my-md-3 my-1" title="Lorem ipsum">By: Lorem ipsum</div>
+                    <div class="col-sm-4 lead my-sm-2 my-md-3 my-1">Saturn, 29 April 2025</div>
                 </div>
             </div>
             <div class="img m-3">
-                <img src="IMG/computer.jpeg" class="img-fluid rounded" alt="Image" width="600" height="400" />
+                <img src="IMG/computer.jpeg" class="img-fluid rounded" alt="Image" width="550" />
                 <p class="fs-6 ms-4 mt-2 lead">Lorem ipsum dolor sit amet consectetur. (<a href="https://dreamina.capcut.com/en-en/">Photo: Dreamina.AI</a>)</p>
             </div>
             <div class="paragraf me-md-5 px-sm-2 fs-5">
